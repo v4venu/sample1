@@ -1,0 +1,4 @@
+FROM
+ADD
+COPY
+RUN
