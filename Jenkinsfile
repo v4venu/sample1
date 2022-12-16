@@ -8,6 +8,16 @@ pipeline{
                 }
             }
         }
+        stage(build){
+            steps{
+                script{
+                    sh """
+                    mvn clean
+                    mvn install
+                    """
+                }
+            }
+        }
     }
 }
 
